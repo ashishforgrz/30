@@ -69,3 +69,12 @@ app.listen(PORT, function(err){
 
 Middleware - 
 Middleware functions are functions that have access to the request object, the response object , and the next function in the application's request-response cycle
+eg: 
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res, next) => {
+  res.send('Welcome Home');
+});
+
+app.listen(3000);
