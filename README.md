@@ -66,3 +66,6 @@ app.listen(PORT, function(err){
     console.log("Server listening on PORT", PORT);
 });
 
+
+Middleware - 
+Middleware functions are functions that have access to the request object, the response object , and the next function in the application's request-response cycle
