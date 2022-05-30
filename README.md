@@ -35,3 +35,34 @@ app.listen(PORT, function(err){
     if (err) console.log(err);
     console.log("Server listening on PORT", PORT);
 }); 
+
+Put -
+The app.put() function routes the HTTP PUT requests to the specified path with the specified callback function
+var express = require('express');
+var app = express();
+var PORT = 3000;
+  
+app.put('/', (req, res) => {
+  res.send("PUT Request Called")
+})
+  
+app.listen(PORT, function(err){
+    if (err) console.log(err);
+    console.log("Server listening on PORT", PORT);
+}); 
+
+Delete -
+The app.delete() function is used to route the HTTP DELETE requests to the path 
+var express = require('express');
+var app = express();
+var PORT = 3000;
+ 
+app.delete('/', (req, res) => {
+  res.send("DELETE Request Called")
+})
+ 
+app.listen(PORT, function(err){
+    if (err) console.log(err);
+    console.log("Server listening on PORT", PORT);
+});
+
