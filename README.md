@@ -92,3 +92,6 @@ app.post('/', (req, res) => {
   res.send('POST request to the homepage')
 })
 
+Request & Response -
+request object represents the HTTP request and contains properties for the request query string
+response specifies the HTTP response when an Express app gets an HTTP request
