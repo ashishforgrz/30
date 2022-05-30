@@ -78,3 +78,17 @@ app.get('/', (req, res, next) => {
 });
 
 app.listen(3000);
+
+Routing -
+Routing refers to how an application’s endpoints (URIs) respond to client requests
+eg:
+// GET method route
+app.get('/', (req, res) => {
+  res.send('GET request to the homepage')
+})
+
+// POST method route
+app.post('/', (req, res) => {
+  res.send('POST request to the homepage')
+})
+
